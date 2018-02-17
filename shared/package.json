@@ -1,0 +1,37 @@
+{
+  "name": "shared",
+  "version": "0.0.1",
+  "description": "Shared react component for native and web",
+  "author": "Francisco Ramini <framini@gmail.com>",
+  "main": "./lib/index.js",
+  "scripts": {
+    "clean": "rimraf lib es",
+    "build": "npm run clean && npm run build:lib",
+    "build:lib": "babel src --out-dir lib --ignore __tests__"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/framini/react-native-and-web/"
+  },
+  "peerDependencies": {
+    "react": "^16",
+    "react-native": "^0.48.4",
+    "react-native-web": "^0.1"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.24.1",
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "babel-plugin-module-resolver": "^3.1.0",
+    "babel-plugin-transform-class-properties": "^6.24.1",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-react": "^6.24.1",
+    "react": "^16",
+    "react-dom": "^16",
+    "react-native-web": "^0.1",
+    "rimraf": "^2.6.1"
+  },
+  "files": ["README.md", "lib"]
+}
